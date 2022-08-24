@@ -3,8 +3,8 @@ import { Pair, Token, Bundle } from '../types/schema'
 import { BigDecimal } from '@graphprotocol/graph-ts/index'
 import { ZERO_BD, ONE_BD } from './helpers'
 
-const WETH_ADDRESS = '0x7ceb23fd6bc0add59e62ac25578270cff1b9f619'
-const USDC_WETH_PAIR = '0x853ee4b2a13f8a742d64c8f088be7ba2131f670d' // created 10008355
+const WETH_ADDRESS = '0xb7ddc6414bf4f5515b52d8bdd69973ae205ff101'
+const USDC_WETH_PAIR = '0x01970441490774666a743386bc18286054b602e2' // created 10008355
 const DAI_WETH_PAIR = '0x4a35582a710e1f4b2030a3f826da20bfb6703c09' // created block 10042267
 const USDT_WETH_PAIR = '0xf6422b997c7f54d1c6a6e103bcb1499eea0a7046' // created block 10093341
 
@@ -49,20 +49,20 @@ export function getEthPriceInUSD(): BigDecimal {
 
 // token where amounts should contribute to tracked volume and liquidity
 let WHITELIST: string[] = [
-  '0x7ceb23fd6bc0add59e62ac25578270cff1b9f619', // WETH
-  '0x2791bca1f2de4661ed88a30c99a7a9449aa84174', // USDC
-  '0x831753dd7087cac61ab5644b308642cc1c33dc13', //QUICK
-  '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270', //WMATIC
-  '0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6', //WBTC
-  '0x8f3cf7ad23cd3cadbd9735aff958023239c6a063', // DAI
-  '0xc2132d05d31c914a87c6611c10748aeb04b58e8f', // USDT
-  '0x9719d867a500ef117cc201206b8ab51e794d3f82', //MAUSDC
-  '0x104592a158490a9228070e0a8e5343b499e125d0', //FRAX
-  '0x033d942a6b495c4071083f4cde1f17e986fe856c', //AGA
-  '0xd6df932a45c0f255f85145f286ea0b292b21c90b', //AAVE
-  '0xa7051c5a22d963b81d71c2ba64d46a877fbc1821', //EROWAN
-  '0xfe4546fefe124f30788c4cc1bb9aa6907a7987f9', //cxETH
-  '0xE6469Ba6D2fD6130788E0eA9C0a0515900563b59' //UST
+  '0xb7ddc6414bf4f5515b52d8bdd69973ae205ff101', // WETH
+  '0x765277EebeCA2e31912C9946eAe1021199B39C61', // USDC
+  // '0x831753dd7087cac61ab5644b308642cc1c33dc13', //QUICK
+  // '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270', //WMATIC
+  // '0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6', //WBTC
+  // '0x8f3cf7ad23cd3cadbd9735aff958023239c6a063', // DAI
+  // '0xc2132d05d31c914a87c6611c10748aeb04b58e8f', // USDT
+  // '0x9719d867a500ef117cc201206b8ab51e794d3f82', //MAUSDC
+  // '0x104592a158490a9228070e0a8e5343b499e125d0', //FRAX
+  // '0x033d942a6b495c4071083f4cde1f17e986fe856c', //AGA
+  // '0xd6df932a45c0f255f85145f286ea0b292b21c90b', //AAVE
+  // '0xa7051c5a22d963b81d71c2ba64d46a877fbc1821', //EROWAN
+  // '0xfe4546fefe124f30788c4cc1bb9aa6907a7987f9', //cxETH
+  // '0xE6469Ba6D2fD6130788E0eA9C0a0515900563b59' //UST
 ]
 
 export function isOnWhitelist(token: string): boolean {

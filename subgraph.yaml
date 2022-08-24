@@ -6,9 +6,9 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: matic
+    network: doge
     source:
-      address: '0x5757371414417b8C6CAad45bAeF941aBc7d3Ab32'
+      address: '0x1e00cf5647108EdCB4f6e1EbC5805753db3dF63e'
       abi: Factory
       startBlock: 5484576
     mapping:
@@ -34,7 +34,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pair
-    network: matic
+    network: doge
     source:
       abi: Pair
     mapping:
